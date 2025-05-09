@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'fr.ensta-bretagne'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    modularity.inferModulePath = true
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(23))
+    }
+}
+
+dependencies {
+    implementation project(':obp3-algos')
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}

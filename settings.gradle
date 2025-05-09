@@ -1,0 +1,4 @@
+rootProject.name = 'confreelander'
+include 'cfl-core'
+include 'cfl-fx'
+include 'cfl-exemple'

@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'fr.ensta-bretagne'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    modularity.inferModulePath = true
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(23))
+    }
+}
+
+javafx {
+    version = "23"
+    modules = [ 'javafx.controls' ]
+}
+
+dependencies {
+    implementation project(':cfl-core')
+    implementation project(':cfl-fx')
+
+    implementation project(':obp3-object-browser-api')
+    implementation project(':obp3-object-browser')
+}
+
+application {
+    mainModule = 'obp3.cfl.exemple'
+    mainClass = "obp3.fx.cfl.browser.ObjectBrowser"
+//    applicationDefaultJvmArgs = [
+//            '--add-modules', 'obp3.fx.objectbrowser'
+//    ]
+}
+
