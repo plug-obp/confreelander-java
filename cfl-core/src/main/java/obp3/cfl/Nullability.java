@@ -14,10 +14,6 @@ public class Nullability implements Function<Language, Boolean> {
 
     @Override
     public Boolean apply(Language language) {
-//        final var isNullableVisitor = new IsNullable();
-//        Fixer<Language, Boolean> fix = new Fixer<>(
-//                (Language n, Function<Language, Boolean> isNullable) -> n.accept(isNullableVisitor, isNullable),
-//                Lattice.BooleanLattice);
         return fixer.apply(language);
     }
 
