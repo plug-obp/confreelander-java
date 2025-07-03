@@ -1,8 +1,8 @@
-module obp3.cfl.exemple {
+module obp.cfl.exemple {
     requires javafx.controls;
-    requires obp3.fx.objectbrowser.api;
-    requires obp3.fx.objectbrowser;
-    requires obp3.cfl.core;
-    requires obp3.fx.cfl;
+    requires obp.fx.objectbrowser.api;
+    requires obp.fx.objectbrowser;
+    requires obp.cfl.core;
+    requires obp.fx.cfl;
     exports obp3.fx.cfl.browser;
 }
