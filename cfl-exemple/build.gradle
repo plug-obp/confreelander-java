@@ -28,7 +28,7 @@ dependencies {
     implementation project(':cfl-fx')
 
     implementation project(':obp3-object-browser-api')
-    implementation project(':obp3-object-browser')
+    implementation project(':obp3-object-browser-base')
 }
 
 application {

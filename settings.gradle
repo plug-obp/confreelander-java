@@ -1,4 +1,4 @@
-rootProject.name = 'confreelander'
+rootProject.name = 'cfl'
 include 'cfl-core'
 include 'cfl-fx'
 include 'cfl-exemple'
